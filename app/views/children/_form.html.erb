@@ -1,0 +1,80 @@
+<%= form_for(@child) do |f|  %>
+  <% if @child.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@child.errors.count, "error") %> prohibited this child from being saved:</h2>
+
+      <ul>
+      <% @child.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <center>
+  <div class="field">
+    <%#= f.label :UUID%><br />
+    <%# f.text_field @child.uuid %>
+  </div>
+  <div class="field">
+    <%= f.label :Student_name%><br />
+    <%= f.text_field :S_name %>
+  </div>
+<div class="field">
+    <%= f.label :Father_name%><br />
+    <%= f.text_field :F_name %>
+  </div>
+  <div class="field">
+    <%= f.label :Mother_name%><br />
+    <%= f.text_field :M_name %>
+  </div>
+<div class="field">
+    <%= f.label :DOB%><br />
+    <%= f.date_select :DOB , :start_year => 1995,:end_year=>2012  %>
+  </div>
+  <div class="field">
+     <%= f.label :phone %><br/>
+     <%= f.number_field :phone %>
+     </div>
+
+  <div class="field">
+     <%#= f.label :phone %>
+     <%#= f.text_field :phone %>
+     </div>
+  <div class="field">
+    <%= f.label :class%><br />
+    <%= f.text_field :clas %>
+  </div>
+
+    <div class="field">
+    <%= f.label :Family_Income%><br />
+    <%= f.radio_button  :A_salary, "low"    %>    1,00000 to 5,00000  <br/>
+    <%= f.radio_button  :A_salary, "medium" %> 5,00000 to 10,00000<br/>
+    <%= f.radio_button  :A_salary, "high"   %>   Above 10,00000 
+  
+  </div>
+  <div class="field">
+    <%= f.label :PAN_no%><br />
+    <%= f.text_field :PAN_no %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Address%><br />
+    <%= f.text_area :address,:rows=>3 %>
+
+  </div>
+  
+<div class="field">
+    <%= f.label :percentage%><br />
+    <%= f.text_field :marks %>
+  </div>
+  <div class="field">
+   <%= f.label :declaration%><br/>
+   <%= f.check_box :declaration %><br/>
+ 
+   <div class="action">
+  
+    <%= f.submit %>
+  </div>
+  </center>
+<% end %>

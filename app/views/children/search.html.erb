@@ -1,0 +1,42 @@
+<h1>search child</h1>
+
+<%if (@child.length ==0)%>
+<p><h3>There is no student matching to your entered text..<br/> Enter the uuid correctly..</h3></p>
+<%#= link_to 'Back', :controller=>'children',:action=>'home'%> 
+<%#end%>
+
+<%else%>
+<% @child.each do |c| %>
+<p>
+  <b>UUID:</b>
+  <%= c.uuid %>
+</p>
+<p>
+  <b>student Name:</b>
+  <%= c.S_name%>
+</p>
+<p>
+  <b>DOB:</b>
+  <%= c.DOB %>
+</p>
+<p>
+  <b>Father Name:</b>
+  <%= c.F_name %>
+</p>
+<p>
+  <b>Mother Name:</b>
+  <%= c.M_name %>
+</p>
+<p>
+  <b>Class:</b>
+  <%= c.clas %>
+</p>
+<p>
+  <b>phone:</b>
+  <%= c.phone %>
+</p>
+<%end%>
+<%end%>
+<%#= link_to 'Show', @child%> |
+<%#= link_to 'Back', children_path %>
+<%=link_to 'Home',{ :action=>'home'}%>

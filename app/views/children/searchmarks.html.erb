@@ -1,0 +1,26 @@
+
+<br/>
+<table content="autofit" border="1" align="center" width="100%" >
+  
+
+<% @b.each do |child| %>
+  <tr>
+  
+    <td><%= child.uuid %></td>
+    <td><%= child.S_name %></td>
+    <td><%= child.DOB %></td>
+    <td><%= child.F_name %></td>
+    <td><%= child.M_name %></td>
+    <td><%= child.clas %></td>
+    <td><%= child.address %></td>
+    <td><%= child.A_salary %></td>
+    <td><%= child.PAN_no %></td>
+    <td><%= child.marks %></td>
+    
+   
+  </td>
+  </tr>
+
+
+<% end %>
+</table>

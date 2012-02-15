@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+<center><%=image_tag "i3.jpg"%>
+<p>
+  <b>UUID:</b>
+  <%= @child.uuid %>
+</p>
+<p>
+  <b>student Name:</b>
+  <%= @child.S_name%>
+</p>
+<p>
+  <b>DOB:</b>
+  <%= @child.DOB %>
+</p>
+<p>
+  <b>Father Name:</b>
+  <%= @child.F_name %>
+</p>
+<p>
+  <b>Mother Name:</b>
+  <%= @child.M_name %>
+</p>
+<p>
+  <b>Class:</b>
+  <%= @child.clas %>
+</p>
+<p>
+  <b>phone:</b>
+  <%= @child.phone %>
+</p>
+<%= link_to 'Edit', edit_child_path(@child) %> |
+<%= link_to 'Back', children_path %>

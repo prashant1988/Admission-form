@@ -1,0 +1,36 @@
+<h1>Listing children</h1>
+
+<center><%= image_tag "i2.jpg" , :width => '250' ,:align => 'right'%></center>
+
+<%= form_tag :controller=>'children',:action=>'searchmarks', :method => :get, :remote => true do |f| %>
+  percent<%= text_field_tag :per, params[:per] %>
+  <%= submit_tag "Search",:per=>nil %>
+<% end %>
+
+<center>
+<table border = 11 bgcolor=orange cellpadding="25" cellspacing="10">
+  
+<% @child.each do |child| %>
+  <tr>
+    
+    <b>
+    <td><%= child.S_name %></td>
+    <td><%= child.DOB %></td>
+    <td><%= child.F_name %></td>
+    <td><%= child.M_name %></td>
+    <td><%= child.clas %></td>
+    <td><%= child.address %></td>
+    <td><%= child.A_salary %></td>
+    <td><%= child.PAN_no %></td>
+    <td><%= child.marks %></td>
+    <td><%= link_to 'Show', child %></td>
+    <td><%= link_to 'Edit', edit_child_path(child) %></td>
+   <td><%= link_to 'Destroy', :action=>'delete',:id=>child.id %></td>
+   
+    </b>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<h2><%= link_to 'New Registration', new_child_path %></h2>
