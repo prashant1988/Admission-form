@@ -11,29 +11,29 @@
     </div>
   <% end %>
 
-  <center>
+
   <div class="field">
     <%#= f.label :UUID%><br />
     <%# f.text_field @child.uuid %>
   </div>
   <div class="field">
-    <%= f.label :Student_name%><br />
+    <%= f.label :Student_name%>
     <%= f.text_field :S_name %>
   </div>
 <div class="field">
-    <%= f.label :Father_name%><br />
+    <%= f.label :Father_name%>
     <%= f.text_field :F_name %>
   </div>
   <div class="field">
-    <%= f.label :Mother_name%><br />
+    <%= f.label :Mother_name%>
     <%= f.text_field :M_name %>
   </div>
 <div class="field">
-    <%= f.label :DOB%><br />
+    <%= f.label :DOB%>
     <%= f.date_select :DOB , :start_year => 1995,:end_year=>2012  %>
   </div>
   <div class="field">
-     <%= f.label :phone %><br/>
+     <%= f.label :phone %>
      <%= f.number_field :phone %>
      </div>
 
@@ -42,39 +42,40 @@
      <%#= f.text_field :phone %>
      </div>
   <div class="field">
-    <%= f.label :class%><br />
+    <%= f.label :class%>
     <%= f.text_field :clas %>
   </div>
 
     <div class="field">
-    <%= f.label :Family_Income%><br />
+    <%= f.label :Family_Income%>
     <%= f.radio_button  :A_salary, "low"    %>    1,00000 to 5,00000  <br/>
     <%= f.radio_button  :A_salary, "medium" %> 5,00000 to 10,00000<br/>
     <%= f.radio_button  :A_salary, "high"   %>   Above 10,00000 
   
   </div>
   <div class="field">
-    <%= f.label :PAN_no%><br />
+    <%= f.label :PAN_no%>
     <%= f.text_field :PAN_no %>
   </div>
 
   <div class="field">
-    <%= f.label :Address%><br />
-    <%= f.text_area :address,:rows=>3 %>
+    <%= f.label :Address%>
+    <%= f.text_field :address,:rows=>10 %>
 
   </div>
   
 <div class="field">
-    <%= f.label :percentage%><br />
+    <%= f.label :percentage%>
     <%= f.text_field :marks %>
   </div>
   <div class="field">
-   <%= f.label :declaration%><br/>
-   <%= f.check_box :declaration %><br/>
- 
+   <%= f.label :declaration%>
+   <%= f.check_box :declaration %>
+   </div>
+    <br/>
    <div class="action">
   
     <%= f.submit %>
   </div>
-  </center>
+
 <% end %>

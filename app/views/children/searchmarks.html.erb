@@ -1,9 +1,19 @@
 
 <br/>
 <table content="autofit" border="1" align="center" width="100%" >
-  
-
-<% @b.each do |child| %>
+  <tr>  
+    <th>UUID</th>
+    <th>S_name</th>
+    <th>Dob</th>
+    <th>F-name</th>
+    <th>M-name</th>
+    <th>CLASS</th>
+    <th>ADDRESS</th>
+    <th>A_SALARY</th>
+    <th>PAN_NO</th>
+    <th>MARKS</th>
+   </tr>
+    <% @b.each do |child| %>
   <tr>
   
     <td><%= child.uuid %></td>

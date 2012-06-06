@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20120126125349) do
   end
 
   create_table "students", :id => false, :force => true do |t|
-    t.string   "uuid"
+    t.string   "uuid",       :null => false
     t.string   "name"
     t.integer  "rollno"
     t.integer  "clas"

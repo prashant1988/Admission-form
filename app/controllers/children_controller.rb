@@ -5,6 +5,7 @@ class ChildrenController < ApplicationController
   layout 'standard'
   def index
     @child = Child.all
+    @child=Child.paginate(:page => params[:page], :per_page => 3).all
     #@child=Child.new
 
     respond_to do |format|
@@ -48,35 +49,7 @@ class ChildrenController < ApplicationController
     end
   end
 end
-#  $i=0
 
-# class SelstuController < ApplicationController
-#   def searchmarks
-    
-#         @s=params[:per]
-#     @a=Child.all
-#     @b=Array.new
-#     @a.each do |c|
-#     if (c.marks.to_i > @s.to_i)
-    
-#        @b[$i]=c
-#        $i=$i+1
-#         else
-#          #render 'searchmarks'    
-#         end
-
-#    end
-  
-
-#   end
-# end
-
-
-       
-#   end
-
-  # GET /children/new
-  # GET /children/new.json
   def new 
     @child = Child.new
 

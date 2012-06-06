@@ -3,7 +3,7 @@
 <center><%= image_tag "i2.jpg" , :width => '250' ,:align => 'right'%></center>
 
 <%= form_tag :controller=>'children',:action=>'searchmarks', :method => :get, :remote => true do |f| %>
-  percent<%= text_field_tag :per, params[:per] %>
+  Enter Percent<%= text_field_tag :per, params[:per] %>
   <%= submit_tag "Search",:per=>nil %>
 <% end %>
 
@@ -33,4 +33,5 @@
 </table>
 
 <br />
+<%= will_paginate @child %>
 <h2><%= link_to 'New Registration', new_child_path %></h2>
