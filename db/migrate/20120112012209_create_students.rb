@@ -3,7 +3,7 @@ class CreateStudents < ActiveRecord::Migration
   
   def change
     create_table :students,:id=> false do |t|
-      t.column :uuid,:string,:null => false 
+      t.column :uuid,:string,
     	t.column :name,:string
     	t.column :rollno,:integer
     	t.column :clas,:integer	

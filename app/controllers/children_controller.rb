@@ -67,15 +67,9 @@ end
   # POST /children
   # POST /children.json
   def create
-
     @child = Child.new(params[:child])
-
-
-
-        uud=UUID.new 
-             @child.uuid= uud.generate[1,7] 
-    #@child=Child.new(params[:child])
-    
+    uud=UUID.new
+    @child.uuid= uud.generate[1,7]
 
     respond_to do |format|
       if @child.save
@@ -92,8 +86,7 @@ end
   # PUT /children/1.json
   def update
     @child = Child.find(params[:id])
-
-    respond_to do |format|
+     respond_to do |format|
       if @child.update_attributes(params[:child])
         format.html { redirect_to @child, notice: 'Child was successfully updated.' }
         format.json { head :ok }
@@ -109,7 +102,6 @@ end
   def delete
     @child = Child.find(params[:id])
     @child.delete
-
     respond_to do |format|
       format.html { redirect_to children_url }
       format.json { head :ok }
