@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="210686ec-a288-4616-99a1-6f0737dd7cca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/children_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/children_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/child.rb" afterPath="$PROJECT_DIR$/app/models/child.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/children/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/children/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/children/home.html.erb" afterPath="$PROJECT_DIR$/app/views/children/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/children/index.html.erb" afterPath="$PROJECT_DIR$/app/views/children/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/children/search.html.erb" afterPath="$PROJECT_DIR$/app/views/children/search.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/children/searchmarks.html.erb" afterPath="$PROJECT_DIR$/app/views/children/searchmarks.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/children/show.html.erb" afterPath="$PROJECT_DIR$/app/views/children/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-    </list>
+    <list default="true" id="210686ec-a288-4616-99a1-6f0737dd7cca" name="Default" comment="" />
     <ignored path="schools.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />

@@ -54,7 +54,7 @@ h3 {
 
 h1, h2, h3, p { 
    padding: 0;
-   margin: 10px 15px; 
+   margin: 5px 5px; 
 }
 
 ul, ol {
@@ -185,8 +185,8 @@ input.button {
 #header {
    position: relative;
    clear:left;
-   width: 790px;
-   height: 135px; 
+   width: 1370px;
+   height: 75px; 
    margin: 0; padding: 0;
    background: #58744F
  url(headerbg.jpg) no-repeat left bottom;         
